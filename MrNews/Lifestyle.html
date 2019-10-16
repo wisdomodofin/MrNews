@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Mr News</title>
+	<style type="text/css">
+@media screen and (min-width:320px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 150%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.8% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 60%;}
+
+nav a{text-decoration: none;
+font-size: .6em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.2%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: .6em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: .6em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: .6em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: .6em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: .6em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+@media screen and (min-width:520px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 200%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.8% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 57%;}
+
+nav a{text-decoration: none;
+font-size: .6em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.2%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: .7em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: .7em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: .7em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: .7em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: .7em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+@media screen and (min-width:820px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 230%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.8% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 57%;}
+
+nav a{text-decoration: none;
+font-size: 1em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.5%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: .85em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: .85em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: .8em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: .8em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: .8em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+@media screen and (min-width:1420px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 250%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.3% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 57%;}
+
+nav a{text-decoration: none;
+font-size: 1.7em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14.5%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.3%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: 1.3em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: 1.3em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: 1em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: 1em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14.5%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: 1em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+	</style>
+</head>
+<body>
+	<header>
+	<h1>Mr News</h1>
+	</header>
+	<section align="center">
+	<nav>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/index.html" class="bl">Home</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Politics.html" class="w">Politics</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Entertainment.html" class="b">Entertainment</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Sports.html" class="r">Sport</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Lifestyle.html" class="g">Lifestyle</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Oddies.html" class="o">Oddies</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Economy.html" class="e">Economy</a>
+	</nav>
+	</section>
+	<div id='myleft'><a href="http://pulse.ng/">
+		<img src="data:image/png;base64,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"></a>
+	</div> 
+	<div id="myright"><a href="http://www.ringier.ng/en">
+		<img src="data:image/png;base64,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"></a>
+	</div> 
+	<div id='mycenter'>
+		<table>
+			<tr>
+				<td class="h">
+					5 Benefits of Waking Up Early
+				</td>
+			</tr>
+			<tr>
+				<td class="body">
+				<p>
+					Following is a list of reasons which will convince you to set your alarm for 6 a.m. tomorrow.
+				</p>
+					<p>
+						1.	More productivity
+					</p>
+					<p>
+						Getting up early gives you a kick start for the day ahead. Besides allowing you more hours for your work, it also boosts your speed. Studies have suggested that when a person gets up early, he is more energetic and takes lesser time to do a task that would take more time otherwise. He is also more adept in taking better decisions, planning and achieving goals.
+					</p>
+					<p>
+						2. Mental fitness
+					</p>
+					<p>
+						One very significant benefit of waking up early is reduced stress level. When you rise early, it eliminates the need to rush in the morning. You can then start your day on an optimistic note and such positivity often stays with you throughout the day.
+					</p>
+					<p>
+						3. Better sleep quality
+					</p>
+					<p>
+						Early risers often go to bed early. Getting up early is not something that should be followed irregularly but it needs to be established as a routine in your life. This translates into better sleep quality as your body’s internal clock adapts to your new sleep routine.
+					</p>
+					<p>
+						4. Bigger scores
+					</p>
+					<p>
+						A research conducted by Texas University has identified that students who were early risers scored better grades than those who were late to rise. Their GPAs were higher than the latter. One can link it to an enhanced productivity and quality of sleep.
+					</p>
+					<p>
+						5. Brighter world
+					</p>
+					<p>
+						Getting up early instils you with positivity. A research has suggested that people who got up early were happier, not just for a short duration but overall in life.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="n">
+					5 Facts About Bloating That Will Totally Blow Your Mind
+				</td>
+			</tr>
+			<tr>
+				<td class="last">
+<p>
+We’ve got 5 more surprising truths about belly bloat and what you can do about it that will really blow your mind.
+</p>
+
+<p>1. Carbonated Drinks Aren’t the Only Kind That Puff You Up</p>
+
+While bubbly sodas and champs do bring more air into your belly, sipping any liquid through a straw will also result in you swallowing excess air. That O2 gets trapped in your stomach, small bowel, and colon and produces bloat and gas. For your flattest stomach, skip straws and carbonated drinks.
+
+<p>2. You Can De-Bloat with Hot Water and Lemon</p>
+Celebs swear by piping-hot water with citrus for good reason. In the short term, experts say the lemon water acts as a mild diuretic. In the long term, staying hydrated keeps your metabolism revved and your digestion moving right on schedule, a key aspect of staying (and feeling) slim.
+
+<p>3. Diet Foods Cause More Bloating</p>
+
+If you stock up on fat-free and sugar-free foods, you might feel the need to unbutton. That’s because these foods contain sugar substitutes that are hard for your intestines to digest. They stay in the bowel and draw water in; increasing bloating. And even if your body can digest those faux sugars, they’ll just create even more gas. Ugh.
+
+<p>4. Sitting All Day Can Make You Swell</p>
+
+In general, being more active leads to increased activity in the GI tract. That means being on your bum all day can slow down your digestion, making constipation more likely. And, obviously, being backed up makes you bloat. The prescription is simple: move. Even getting up every 15 minutes or so to walk around can be enough to keep things flowing (literally).
+
+<p>5. Dairy Doesn’t Only Bloat People Who Are Lactose Intolerant</p>
+
+Any given food will impact any given person differently, but dairy products are a super common cause of bloating in most people. Though you might think your body is A-OK at digesting dairy, get this: About 65 percent of the human population has a reduced ability to digest lactose, according to the U.S. National Library of Medicine.
+				</td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<ul>
+			<li><a href="file:///G:/MrNews/About.html">About</a></li>
+			<li><a href="">Facebook</a></li>
+			<li><a href="">Twitter</a></li>
+			<li><a href="">Google+</a></li>
+			<li><a href="">Instagram</a></li>
+		</ul>
+	</footer>
+</body>
+</html>

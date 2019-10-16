@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Mr News</title>
+	<style type="text/css">
+@media screen and (min-width:320px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 150%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.8% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 60%;}
+
+nav a{text-decoration: none;
+font-size: .6em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.2%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: .6em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: .6em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: .6em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: .6em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: .6em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+@media screen and (min-width:520px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 200%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.8% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 57%;}
+
+nav a{text-decoration: none;
+font-size: .6em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.2%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: .7em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: .7em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: .7em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: .7em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: .7em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+@media screen and (min-width:820px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 230%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.8% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 57%;}
+
+nav a{text-decoration: none;
+font-size: 1em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.5%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: .85em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: .85em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: .8em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: .8em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: .8em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+@media screen and (min-width:1420px){
+body{background-color: #ffffff;}
+
+header{background-color: skyblue;
+margin-left: -.5%; 
+margin-right: -.5%;
+padding-left: 2%;}
+
+h1{color: #ffffff; 
+font-size: 250%;}
+
+h1:after{content: "The home for latest news";
+color: #ffffff; 
+font-style: italic; 
+font-size: 35%;
+float: right; 
+padding: 1.3% 3% 0 0;}
+
+nav{display: inline-block; 
+width: 57%;}
+
+nav a{text-decoration: none;
+font-size: 1.7em;
+padding: 0 -.1em 0 -.1em; 
+position: relative;
+float: left;}
+
+nav a:hover{background-color: skyblue;
+color: purple;}
+
+nav a:active{background-color: #ffffff;
+color: #000000;}
+
+.bl{background-color: black;
+padding: 1%;
+color: #ffffff;}
+
+.w{background-color: gray;
+padding: 1%;
+color: black;}
+
+.b{background-color: blue;
+padding: 1%;
+color: #ffffff;}
+
+.r{background-color: red;
+padding: 1%;
+color: #ffffff;}
+
+.g{background-color: green;
+padding: 1%;
+color: #ffffff;}
+
+.o{background-color: orange;
+padding: 1%;
+color: #ffffff;}
+
+.e{background-color: purple;
+padding: 1%;
+color: #ffffff;}
+
+#myleft{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:left;
+width:14.5%;}
+
+#mycenter{
+position:relative;
+float:left;
+width:70.3%;
+}
+
+.h{background-color: skyblue;
+color: #ffffff;
+font-size: 1.3em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+border-top-right-radius: 1em;
+border-top-left-radius: 1em;
+padding: .5em;
+text-align: center;}
+
+.n{background-color: skyblue;
+color: #ffffff;
+font-size: 1.3em;
+font-weight: bold;
+border-top: 1px solid skyblue;
+border-left: 1px solid skyblue;
+border-right: 1px solid skyblue;
+padding: .5em;
+text-align: center;}
+
+.body{text-align: justify;
+line-height: 1.5em;
+font-size: 1em;
+padding: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;}
+
+.last{text-align: justify;
+line-height: 1.5em;
+padding: 1em;
+font-size: 1em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+border-left: 3px solid skyblue;
+border-right: 3px solid skyblue;
+border-bottom: 3px solid skyblue;}
+
+.bd{margin-top: -5em;}
+
+#myright{border: 2px solid skyblue;
+position:relative;
+border-radius: 5px;
+float:right;
+width:14.5%;
+}
+
+img{width: 100%;}
+
+footer{clear: both;
+font-size: 1em;
+background-color: skyblue;
+margin-left: -.5em;
+margin-right: -.5em;
+padding:.3em 0 .1em .7em;}
+
+footer li{list-style: none;
+color: #ffffff;
+font-weight: bold;
+line-height: 1.4em;}
+
+footer a{text-decoration: none; color: #ffffff;}}
+
+	</style>
+</head>
+<body>
+	<header>
+	<h1>Mr News</h1>
+	</header>
+	<section align="center">
+	<nav>
+		<a href="file:///C:/Users/MrNews/index.html" class="bl">Home</a>
+		<a href="file:///C:/Users/Desktop/Wiseola/MrNews/Politics.html" class="w">Politics</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Entertainment.html" class="b">Entertainment</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Sports.html" class="r">Sport</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Lifestyle.html" class="g">Lifestyle</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Oddies.html" class="o">Oddies</a>
+		<a href="file:///C:/Users/Ifesanya%20D.%20Yewande/Desktop/Wiseola/MrNews/Economy.html" class="e">Economy</a>
+	</nav>
+	</section>
+	<div id='myleft'><a href="http://pulse.ng/">
+		<img src="data:image/png;base64,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"></a>
+	</div> 
+	<div id="myright"><a href="http://www.ringier.ng/en">
+		<img src="data:image/png;base64,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"></a>
+	</div> 
+	<div id='mycenter'>
+		<table>
+			<tr>
+			<td class="h">Nigeria in safer hands-Lauretta Onochie</td>
+			</tr>
+			<tr>
+			<td class="body">
+A Presidential Aide, Lauretta Onochie on Sunday, October 2, said that Nigeria was safer and better under the administration of President Muhammadu Buhari than it was under former President Goodluck Jonathan.
+Onochie, a Personal Assistant on Social Media to President Buhari, wrote in an article in response to the comment by People’s Democratic Party’s Director of New Media, Mr Deji Adeyanju.
+It would be recalled that Adeyanju had said that the 2016 Independence Anniversary was the worst since 1960, adding that the current administration was breaking rules of law and infringing on rights.
+However, Ms Onochie stressed that all the problems of the current administration were caused by the previous administrations, especially that of Jonathan which Adeyanju was a part of.
+“The whole world is aware that Nigeria is a much secure and safe nation under President Buhari.
+“The American Secretary of State, John Kerry has been dashing around Nigeria in safety, Facebook’s founder, Mark Zuckerberg, was seen on the streets of Nigeria, jogging with ordinary Nigerians in safety.
+“Nigerians, even those in the North East are moving about.
+“The truth is that, unlike the insensitive PDP bunch, President Buhari and his team is sensitive to Nigerians.
+“They are aware of the present sufferings and hardships Nigerians are going through. They are not just sympathetic to the plight of Nigerians, but they are working round the clock to bring succour to them.
+“They are prudent in the management of our scarce resources. They will not spend our hard earned resources on “pomp and pageantry” celebration while Nigerians suffer.
+“He has assured that the present recession is temporary. We believe him,” she said.
+<p>
+She said that she would have ignored the ‘ranting’ of Adeyanju, but needed to point out that Nigerian were better and happier before the administration of former President Jonathan which Adeyanju was part of.
+Onochie said that even the celebrations that characterised independence anniversary in the last administration were only for a few and not for the ordinary Nigerians.
+“Pomp and pageantry were what Deji was really after.
+“That is what he was used to. It would start with Deji and his co travellers in the ruination train of Nigeria being invited to the Presidential Villa.
+“At the villa, choice wines, spirits and champagnes, worth hundreds of millions of Naira would be gulped down, spilled and even vomited.
+“Food, mostly imported from America, South Africa and United Kingdom, would be consumed at tax payers’ expense.
+“No ordinary Nigerian was invited to be part of this pomp and pageantry.
+“Independence Anniversary party packs can range from an invitation to the Office of the National Security Adviser, NSA, to cart away GHANA must go bagful of Naira or Dollars.
+“Ordinary citizens stayed home in deep reflection of how to get rid of Deji Adeyanju and his big brothers and sisters!
+“How then can the one whose cohorts recolonised us talk about liberty?
+“Nigerians were not part of this pomp and pageantry. Nigerians wallowed in poverty, insecurity and suffered the consequences of the corrupt activities of Deji Adeyanju’s friends.
+“How can the inability of not being able to feed our families, pay our children’s fees, afford basic health care needs, driven from ones ancestral homes, families separated from one another be termed “Liberty”? she queried.
+She alleged that Adeyanju only cared about the current situation because he was no longer benefiting as he had been used to.
+Onochie, therefore expressed optimism that the current economic situation would soon be over as the current administration was working hard to steer the nation away from recession.</p>
+			</td>
+			</tr>
+			<tr>
+				<td class="n">
+				How ex-Governor Peter Obi saved Billions of Naira
+				</td>
+			</tr>
+			<tr>
+				<td class="body">
+Former Governor of Anambra state, Peter Obi caused a stir on social media on Saturday, October 1, 2016, as he was trending for over 24 hours.
+His mind blowing speech and startling revelations of government spending left many wondering whether there is really a recession.
+The former Governor was one of the distinguished guest speakers at The Platform 2016, where he spoke on: Cutting cost in governance.
+The Platform is the brain-child of the charismatic preacher and Senior Pastor of Covenant Christian Center, Poju Oyemade.
+Obi, with his story telling style, opened the eyes of Nigerians to the huge waste of resources that goes on in the corridors of power.
+He also called on Nigerian youths to take back power, adding that Nigeria has all it takes to sustain itself.
+Obi also chided religious leaders for not speaking up against fraudulent members and urged Nigerians to stop celebrating criminality.
+He told a story of how it used to cost him and his contingent, N10m per trip to Abuja whenever he travels (6 times every month).
+Obi said he had to cut down the expenses, because he found out that the 30 people who always travelled with him, had nothing to do in Abuja.
+He also said he saved $50m and N7b in Access bank, $55m and N10b in Fidelity bank, and $155.4m in Diamond bank.
+The former Governor jokingly revealed how he had to stop his cook from killing a cow every day in the Government House.
+<P>
+He Highlighted ways on how Governors can save money, he said:
+<ol>
+<li>
+Governors should stop using the security vote, which is up to N600b - N800b to run their office and sponsor their aides.</li>
+<li>
+Initiate competitive procurement.</li>
+<li>
+Do away with unconstitutional office of the first lady which is run with N2b.
+</li>
+<li>
+Reduce Governor’s cars to 2, instead of 6 bullet-proof cars.</li>
+<li>
+Reduce Govt. house jeeps instead of 25 jeeps, which is the average number most Governors have.</li>
+</ol>
+</P>
+Peter Obi won the admiration of many on social media, who even started calling for him to vie for President.
+Other speakers at The Platform 2016, were: Dr. Olisa Agbakoba - Former President, Nigerian Bar Association and member of the Presidential Task Force on Petroleum Revenue Management,  Rev. Sam Adeyemi - Senior Pastor, Daystar Christian Centre & Founder, Daystar Leadership Academy,  Bishop Mathew Kukah - Bishop of the Catholic Diocese of Sokoto, Segun Adeniyi - Chairman, Editorial Board of THISDAY newspapers, Prof. Osaghae Eghosa - Vice Chancellor, Igbinedion University, Okada, and Bolanle Austen-Peters - Founder, Terra Kulture & BAP Productions.
+				</td>
+			</tr>
+			<tr>
+				<td class="n">
+					Hausa actress expelled from Kannywood
+				</td>
+			</tr>
+				<td class="body">
+Hausa top actress, Rahama Sadau, has been expelled from Kannywood, the Hausa film industry.
+According to a statement issued on Sunday, October 2, by the Motion Pictures Practitioners Association of Nigeria, Sadau was expelled for featuring in a romantic music video by Jos born singer, ClassiQ.
+The statement was signed by the Secretary of the association, Salisu Mohammed.
+Mohammed also warned other actors to adhere to the rules binding their participation in the Kannywood film industry else face similar punishment.
+				</td>
+			</tr>
+			<tr>
+				<td class="n">
+					Mr Ibu reveals he almost committed suicide following son's death
+				</td>
+			</tr>
+			<tr>
+				<td class="body">
+According to him, it was due to the negligence of the Lagos University Teaching Hospital (LUTH).
+The actor made the revelation in an interview with PunchNG.
+			<p>
+				<blockquote>
+"The matter was actually between the Paediatric Department of the Lagos University Teaching Hospital and me. It was in 2011. On January 18, 2011, my 2-year-old son fell ill. He was diagnosed with inflammation of the liver.
+The hospital suggested that he should be scanned. At the same time, I was informed that I could take my son out of the hospital to get the scan done elsewhere. But the same people later declined, saying that everything had to be done in the hospital because he was too weak to be taken outside."								</blockquote>
+			</p>
+			<p>
+				<blockquote>
+"After a while, I was told that there was no electricity in the hospital. When I asked if there was no standby generator, they said there was no fuel in it. I offered to pay for fuel only to be told that the man that operated the generator was not around", he continued, adding, "When I left the place and got back later, the man still had not returned. Then I was advised to write an application and to submit to the admin department. After writing the application, I found that there was nobody to receive and treat it.
+While I was waiting, I was told that my son’s condition required blood transfusion. I did everything possible to ensure that the boy was given treatment at the hospital, but my efforts were in vain. Finally, the boy gave up the ghost."
+				</blockquote>
+			</p>
+			<p>
+				<blockquote>
+"Later, one of the doctors came to me and, without even sympathising with me, asked if I could release my boy’s corpse to him so that they could cut it open and use it to teach other medical students. In that moment, I felt like committing murder for the first time in my life."
+				</blockquote>
+			</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="n">
+					Celta Vigo 4 Barcelona 3: Ter Stegen blunders cost champions
+				</td>
+			</tr>
+			<tr>
+				<td class="body">
+Barcelona missed the chance to move top of LaLiga as they fell to a damaging 4-3 loss away to Celta Vigo, with goalkeeper Marc-Andre ter Stegen enduring a match to forget.
+
+Real Madrid's home draw against Eibar earlier on Sunday had opened the door for the champions to take first place, but they instead endured a miserable evening at Balaidos in a thrilling encounter.
+
+Celta have beaten Barca in each of the last two seasons including a 4-1 home victory last season and raced into a three-goal half-time lead.
+
+Pione Sisto opened the scoring following a mistake from Ter Stegen, before two goals in the space of 86 seconds an Iago Aspas strike and an own goal from Jeremy Mathieu rocked the visitors.
+
+Luis Enrique's side launched a comeback after the break, with Gerard Pique's header and a Neymar penalty setting up a grandstand finish, but Ter Stegen blundered again for Pablo Hernandez's match-clinching header. 
+
+Pique did net another header in the final moments, but the hosts held on and Eduardo Berizzo now has three LaLiga victories over his Celta predecessor Luis Enrique a man no other manager in Spain's top-flight has beaten more than once.
+
+And Barca have now lost two of their first seven games to sit fourth in the early season table, two points behind leaders Atletico Madrid and Real.
+<p>
+Barca had the first chance of note when Luis Suarez drilled a low effort straight at Sergio Alvarez, but it was the home team who opened the scoring in the 22nd minute. 
+
+Ter Stegen's loose pass to Sergio Busquets led to Aspas' precise throughball finding Sisto who also scored last week against Espanyol and he calmly took one touch before converting with a low finish.
+
+After 31 minutes, it was two. A long clearance from Hugo Mallo was not dealt with by Barca's defence and Pique inexplicably gave Aspas all the time he needed to dribble to the edge of the area and drill a left-footed effort into the far corner.
+
+Astonishingly, Celta were celebrating a third goal moments later. More panic in the away backline gave Daniel Wass the chance to send in a cross from the right looking for Aspas, but Mathieu back in the team as one of four changes got there first and inadvertently diverted his attempted diving clearance past Ter Stegen and in.
+
+Luis Enrique brought on Andres Iniesta for his 600th club appearance in place of Rafinha at the break and it was his dipping cross from the left which set up Pique's thumping header after 58 minutes, with Alvarez failing in his attempt to get there first.
+
+All of a sudden, the momentum was with Barca and within six minutes they had another goal back.
+
+Andre Gomes was bundled to the ground by a combination of Nemanja Radoja and Mallo, with Neymar sending Alvarez the wrong way from the resulting spot-kick for his fourth LaLiga goal of the campaign.
+
+Neymar wanted another penalty, but his claim was denied despite protesting that home captain Mallo had tugged him to the ground.
+</p>
+<p>
+Celta struck again 13 minutes from time when Ter Stegen collected a backpass from Jordi Alba and proceeded to chip an attempted pass straight against the head of Hernandez, who along with a jubilant home crowd could not believe his luck as the ball bounced in.
+
+Ter Stegen did make a key save when Aspas had a golden chance to make it five and that allowed Barca to revive hopes of a recovery again when impressive play from substitute Denis Suarez down the right set up another Pique header, this one from close range.
+
+The visitors had two decent chances to seal a remarkable draw after that 87th-minute goal as the drama continued right up until the final whistle.
+
+Neymar headed a chance wide from Arda Turan's cross, before Pique almost made it a hat-trick of headers, failing to find the target from another Denis Suarez delivery as a night to remember ended with Celta celebrations.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="n">
+					Susie Wolff is hoping to get more women involved in motorsport
+				</td>
+			</tr>
+			<tr>
+				<td class="body">
+During Women's Sport Week 2016, BBC Sport will have a special column each day by a notable woman in sport. Former Williams Formula 1 test driver Susie Wolff tells BBC how she is hoping to get more women involved in motorsport, and why it is so difficult for a female driver to reach F1.
+<p>
+In my racing career, I only ever did one interview in which I wasn't asked about my gender. There is a huge misconception that motorsport is a male-dominated environment. It has been, but it is changing.
+
+Everybody would always ask me 'why aren't there more women at the top level of motorsport?' It's simply a numbers game - there are not enough girls starting at a young age.
+
+To make it in Formula 1, which is the absolute pinnacle, is incredibly tough no matter what your gender.
+
+There are only 22 seats on the starting grid and you've got every young driver dreaming of F1. If you have 1,000 little boys racing between the ages of eight and 10 and only 10-20 girls, it's clear it's going to be very difficult for even one of them to make it all the way to the top.
+</p>
+<p>
+The change in technical regulations next year is going to make it more difficult for a female driver to race in F1.
+
+There is going to be more downforce and bigger tyres. All the testing so far has indicated it's a lot more physical for the drivers. In my time in F1, I never doubted I could be successful. I sadly never made it on to the starting grid of an F1 race, but during testing I completed a race distance. I knew I could drive that car fast.
+
+A huge part of my preparation was the physical training - those were the days and hours nobody sees. I was always confident of saying that with the car regulations as they are, and F1 as it is, a woman can be successful.
+
+With the new technical regulations though, it's going to be tougher.
+
+It's too difficult to put a timescale on it but I would hope that within the next 10 years we'll see a female driver on the grid of an F1 race.
+
+Society is ready for the change. It's never going to be something that happens overnight, it's going to be a long-term project. There are successful women in the paddock and in front of television cameras who are helping that wave of change. They are there are because they are the best at the job.
+</p>
+<p>
+It was the middle of last year when I decided to call it a day because I couldn't really progress from a test driver role. I wanted to give something back to the sport that had given me so much and, together with the Motor Sports Association [the governing body of UK motorsport], we came up with Dare to be Different, a concept that would introduce more girls and women to on-track racing and all the different roles within motorsport.
+
+There are two aspects to Dare to be Different. The first is the headline events - we go around the country and get 100 schoolgirls to a racetrack or a venue where they can try karting, build a hovercraft so they can see the engineering side, and do a 'piece to camera' so they can understand journalism.
+
+The second element is the community, where we try to get as many of the successful women already in the sport - from marshalling, engineering, racing and marketing - to connect with us so they can become role models for the next generation.
+
+There are some girls as young as eight all the way up to 16 in karting, and some 16 and over racing in other championships. I can follow what they're doing and the whole community can follow what they're doing.
+
+There are some girls who have managed to get very high up - Swiss Simona de Silvestro has just signed a three-year deal to race in V8 Supercars, while Colombia's Tatiana Calderon is racing in GP3. There are a select few women racers out there. Sadly, just not enough.
+
+We've had fantastic support from the world of F1. People presume it is a very closed environment which isn't welcoming to women but all of the F1 teams have very talented women. Claire Williams [deputy team principal] knows she's a role model for the next generation because she is practically running the Williams racing team.
+</p>
+<p>
+Sometimes in life you just have to see it to believe it.
+
+One of the tougher parts for me coming through the various categories was the lack of a clear role model. There was no woman who had achieved what I wanted to achieve in the past 20 years. I was going into unknown territory. It's very important to me to give something back - to pass on my know-how, to give all the lessons I learned onto the next generation so they don't make the same mistakes.
+
+Ultimately, when you're out on track with your helmet on, nobody can see the driver. Nobody can judge you on what you look like if your hair is long or short, if you're black or you're white, if you're male or female. All that matters is your performance. The stopwatch is the factor that determines your success or not.
+</p>
+<p>
+Susie Wolff was speaking to BBC Sport's Alan Jewell.
+</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="n">
+					5 Benefits of Waking Up Early
+				</td>
+			</tr>
+			<tr>
+				<td class="last">
+				<p>
+					Following is a list of reasons which will convince you to set your alarm for 6 a.m. tomorrow.
+				</p>
+					<p>
+						1.	More productivity
+					</p>
+					<p>
+						Getting up early gives you a kick start for the day ahead. Besides allowing you more hours for your work, it also boosts your speed. Studies have suggested that when a person gets up early, he is more energetic and takes lesser time to do a task that would take more time otherwise. He is also more adept in taking better decisions, planning and achieving goals.
+					</p>
+					<p>
+						2. Mental fitness
+					</p>
+					<p>
+						One very significant benefit of waking up early is reduced stress level. When you rise early, it eliminates the need to rush in the morning. You can then start your day on an optimistic note and such positivity often stays with you throughout the day.
+					</p>
+					<p>
+						3. Better sleep quality
+					</p>
+					<p>
+						Early risers often go to bed early. Getting up early is not something that should be followed irregularly but it needs to be established as a routine in your life. This translates into better sleep quality as your body’s internal clock adapts to your new sleep routine.
+					</p>
+					<p>
+						4. Bigger scores
+					</p>
+					<p>
+						A research conducted by Texas University has identified that students who were early risers scored better grades than those who were late to rise. Their GPAs were higher than the latter. One can link it to an enhanced productivity and quality of sleep.
+					</p>
+					<p>
+						5. Brighter world
+					</p>
+					<p>
+						Getting up early instils you with positivity. A research has suggested that people who got up early were happier, not just for a short duration but overall in life.
+					</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<ul>
+			<li><a href="file:///G:/MrNews/About.html">About</a></li>
+			<li><a href="">Facebook</a></li>
+			<li><a href="">Twitter</a></li>
+			<li><a href="">Google+</a></li>
+			<li><a href="">Instagram</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
